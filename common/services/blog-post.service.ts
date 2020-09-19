@@ -21,6 +21,7 @@ export async function parseContent(content: AmplienceContent[]): Promise<Amplien
 
 export function isBlogPost(contentItem: DefaultContentBody): contentItem is BlogPost & DefaultContentBody {
   const blogPost = contentItem as BlogPost;
+  console.log(contentItem);
   return (
     blogPost.title !== undefined &&
     blogPost.authors !== undefined &&

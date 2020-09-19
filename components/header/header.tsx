@@ -25,7 +25,7 @@ const Header = ({ title }: { title: string }): ReactElement => {
           display: flex;
           flex: 1 0 auto;
           justify-content: center;
-          background-color: ${theme.colors.mirage};
+          background-color: ${theme.colors.black};
         }
         header {
           display: flex;

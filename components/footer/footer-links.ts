@@ -1,47 +1,39 @@
 const footerLinks = [
   {
-    title: 'For Developers',
+    title: 'About us',
     links: [
       {
-        text: 'GitHub',
-        href: '//github.com/amplience/'
+        text: 'Our Story',
+        href: '#'
       },
       {
-        text: 'Stack Overflow',
-        href: '//stackoverflow.com/questions/tagged/amplience-dynamic-content'
+        text: 'Sustainability',
+        href: '#'
       },
       {
-        text: 'Dynamic Content docs',
-        href: '//docs.amplience.net/integration/developergettingstarted.html'
-      },
-      {
-        text: 'Content Hub docs',
-        href: '//docs.amplience.net/contenthub.html'
-      },
-      {
-        text: 'API reference',
-        href: '//docs.amplience.net/integration/reference.html'
+        text: 'Work at ANYA finn',
+        href: '#'
       }
     ]
   },
   {
-    title: 'Company',
+    title: 'Find Us',
     links: [
       {
-        text: 'Website',
-        href: '//amplience.com'
+        text: 'Find a Store',
+        href: '#'
       },
       {
-        text: 'Careers',
-        href: '//amplience.com/careers'
+        text: 'Request a Catalog',
+        href: '#'
       },
       {
-        text: 'Privacy policy',
-        href: '//amplience.com/privacy-cookie-policy'
+        text: 'Email Signup',
+        href: '#'
       },
       {
-        text: 'What`s new',
-        href: '//docs.amplience.net/releasenotes/readme.html'
+        text: 'Contact',
+        href: '#'
       }
     ]
   }

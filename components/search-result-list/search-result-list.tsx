@@ -21,8 +21,9 @@ const BlogPostSearchResultList: FunctionComponent<StateResultsProvided<BlogPost>
   if (searchResults.hits.length === 0) {
     return <NoBlogPosts />;
   }
-
+  
   const blogPosts = searchResults.hits.filter(isBlogPost);
+  console.log(blogPosts)
 
   return (
     <div id="searchResults">

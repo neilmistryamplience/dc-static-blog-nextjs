@@ -16,15 +16,15 @@ const Footer = (): ReactElement => {
             <div className="footer-info-top">
               <Logo />
               <div className="social-links">
-                <ExternalLink href="//twitter.com/amplience">
+                <ExternalLink href="#">
                   <img src="/static/images/social/ic_twitter.svg" alt="Twitter logo" />
                 </ExternalLink>
-                <ExternalLink href="//www.linkedin.com/company/amplience/">
+                <ExternalLink href="#/">
                   <img src="/static/images/social/ic_linkedin.svg" alt="Linkedin logo" />
                 </ExternalLink>
               </div>
             </div>
-            <div className="copyright">&copy; Copyright Amplience {currentYear}</div>
+            <div className="copyright">&copy; Copyright ANYA finn {currentYear}</div>
           </div>
           <div className="footer-links">{footerLinkSections}</div>
         </section>
@@ -35,7 +35,7 @@ const Footer = (): ReactElement => {
           display: flex;
           flex: 1 0 auto;
           padding-top: 50px;
-          background-color: ${theme.colors.whiteLilac};
+          background-color: ${theme.colors.black08};
           justify-content: center;
         }
 

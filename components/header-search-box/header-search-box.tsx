@@ -60,7 +60,7 @@ const HeaderSearchBox = ({ placeholderText }: { placeholderText: string }): Reac
 
           .ais-SearchBox-input {
             height: 57px;
-            background-color: #4a515a;
+            background-color: ${theme.colors.doveGray};
             color: ${theme.colors.silver};
             border-radius: 3px;
             font-size: 18px;

@@ -9,7 +9,7 @@ const Logo = ({ darkMode }: { darkMode?: boolean }): ReactElement => {
         className="logo"
         src={`/static/images/${logoSrcName}-100h.png`}
         srcSet={`/static/images/${logoSrcName}-50h.png 1x, /static/images/${logoSrcName}-100h.png 2x`}
-        alt="Amplience logo"
+        alt="ANYA Finn logo"
       />
       <style jsx>{`
         img {
