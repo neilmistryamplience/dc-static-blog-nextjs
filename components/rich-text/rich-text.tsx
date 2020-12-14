@@ -34,7 +34,6 @@ const RichText: FunctionComponent<any> = ({
                             </div>
                           );
                       case 'dc-content-link':
-                        console.log(data._meta.schema);
                         if( data._meta.schema == "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/image.json"){
                             return (
                                 <div key={data.image.id}>
@@ -53,8 +52,6 @@ const RichText: FunctionComponent<any> = ({
                               </div>
                                 );
                         }else if( data._meta.schema == "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/video.json"){
-                            data.srcSet = getVideoSources(data);
-
                             var videoSrc = 'https://' + data.video.defaultHost + '/v/' + data.video.endpoint + '/' + data.video.name;
                             
                             var itemArray = [
@@ -78,7 +75,10 @@ const RichText: FunctionComponent<any> = ({
                                     <ReactMarkdown source={data.text} renderers={MARKDOWN_RENDERERS} />
                                 </div>
                                 );
+                        } else {
+                            return null;
                         }
+
 
                           
 
