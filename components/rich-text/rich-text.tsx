@@ -12,10 +12,10 @@ const MARKDOWN_RENDERERS = { ...markdown };
 export default RichText;*/
 
 const RichText: FunctionComponent<any> = ({
-  content:{
-      richtext = []
-  }
-}:any) => {
+    content:{
+        richtext = []
+    } = {}
+  }:any) => {
   return (
       <>
           {

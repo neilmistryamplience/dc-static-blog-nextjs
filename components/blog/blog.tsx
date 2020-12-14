@@ -38,6 +38,7 @@ const Blog = ({ blogPost }: { blogPost: BlogPost }): ReactElement => {
         />
       </div>
       <div className="content-wrapper">
+        
         <RichText content={blogPost.textcontent} />
         <Content content={blogPost.content} />
       </div>
