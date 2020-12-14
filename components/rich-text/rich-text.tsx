@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import markdown from '../markdown-renderers/markdown';
 import Picture from '../picture/picture';
 import Video from '../videos/video.component';
-import { getVideoSources } from '../../common/services/video.service';
 
 const MARKDOWN_RENDERERS = { ...markdown };
 
