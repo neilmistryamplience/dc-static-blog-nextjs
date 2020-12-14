@@ -28,13 +28,12 @@ export function isBlogPost(contentItem: DefaultContentBody): contentItem is Blog
     blogPost.date !== undefined &&
     blogPost.description !== undefined &&
     blogPost.image !== undefined &&
-    blogPost.readTime !== undefined &&
-    blogPost.content !== undefined
+    blogPost.readTime !== undefined
   );
 }
 
 export async function parseBlogPost(contentItem: BlogPost & DefaultContentBody): Promise<BlogPost> {
-  const { _meta, title, date, description, authors, readTime, image, content, tags } = contentItem;
+  const { _meta, title, date, description, authors, readTime, image, content = [], textcontent, tags } = contentItem;
 
   return {
     _meta,
@@ -46,6 +45,7 @@ export async function parseBlogPost(contentItem: BlogPost & DefaultContentBody):
     readTime,
     image,
     content: await parseContent(content),
+    textcontent,
     tags
   };
 }

@@ -24,12 +24,12 @@ Once you have everything installed you can then create new blog posts and publis
 
 | Filename       | Schema ID                                                                                       | Schema Type  | Visualization Supported |
 | -------------- | ----------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
-| author.json    | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json    | Content Type | No                      |
-| blog.json      | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/blog.json      | Content Type | Yes                     |
-| blog-post.json | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/blog-post.json | Content Type | Yes                     |
-| image.json     | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json     | Content Type | Yes                     |
-| text.json      | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json      | Content Type | Yes                     |
-| video.json     | https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/video.json     | Content Type | Yes                     |
+| author.json    | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/author.json    | Content Type | No                      |
+| blog.json      | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/blog.json      | Content Type | Yes                     |
+| blog-post.json | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/blog-post.json | Content Type | Yes                     |
+| image.json     | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/image.json     | Content Type | Yes                     |
+| text.json      | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/text.json      | Content Type | Yes                     |
+| video.json     | https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/video.json     | Content Type | Yes                     |
 
 ### Creating Schemas & Registering Content Types
 
@@ -215,7 +215,7 @@ It is possible to get Netlify to re-build and publish your blog whenever you pub
 3. Enter a sensible label (e.g. "Netlify Deployment")
 4. Enter the Netlify "build hook" that you created in the previous section as your URL
 5. Enable the Webhook trigger "Snapshot - Published"
-6. Under "Filters", click new and add the JSON path "\$.payload.rootContentItem.contentTypeUri", ensure "Equals" operator is selected and enter "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/blog-post.json" as the value
+6. Under "Filters", click new and add the JSON path "\$.payload.rootContentItem.contentTypeUri", ensure "Equals" operator is selected and enter "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/blog-post.json" as the value
 7. Click "Save"
 
 Notes:

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/blog-post.json",
+  "id": "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/blog-post.json",
   "title": "Blog post",
   "description": "A blog post",
   "allOf": [
@@ -53,7 +53,7 @@
         {
           "properties": {
             "contentType": {
-              "enum": ["https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json"]
+              "enum": ["https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/image.json"]
             }
           }
         }
@@ -92,12 +92,22 @@
           {
             "properties": {
               "contentType": {
-                "enum": ["https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/author.json"]
+                "enum": ["https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/author.json"]
               }
             }
           }
         ]
       }
+    },
+    "textcontent": {
+      "type": "object",
+      "title": "Blog Content",
+      "description": "The main content for the blog in rich text form",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/rich-text.json"
+        }
+      ]
     },
     "content": {
       "title": "Content",
@@ -115,9 +125,10 @@
               "contentType": {
                 "title": "Content",
                 "enum": [
-                  "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/image.json",
-                  "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/video.json",
-                  "https://raw.githubusercontent.com/amplience/dc-static-blog-nextjs/master/schemas/text.json"
+                  "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/rich-text.json",
+                  "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/image.json",
+                  "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/video.json",
+                  "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/text.json"
                 ]
               }
             }
@@ -126,6 +137,6 @@
       }
     }
   },
-  "propertyOrder": ["title", "_meta", "authors", "date", "description", "image", "tags", "readTime", "content"],
-  "required": ["title", "authors", "date", "description", "image", "readTime", "content"]
+  "propertyOrder": ["title", "_meta", "authors", "date", "description", "image", "tags", "readTime", "textcontent", "content"],
+  "required": ["title", "authors", "date", "description", "image", "readTime"]
 }

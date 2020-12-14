@@ -13,4 +13,5 @@ export default interface BlogPost extends DefaultContentBody {
   tags: string[];
   readTime: number;
   content: AmplienceContent[];
+  textcontent: any;
 }

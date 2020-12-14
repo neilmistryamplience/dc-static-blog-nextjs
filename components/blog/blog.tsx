@@ -5,6 +5,7 @@ import Content from '../content/content';
 import BlogPost from '../../common/interfaces/blog-post.interface';
 import Picture from '../picture/picture';
 import TagChips from '../tag-chips/tag-chips';
+import RichText from '../rich-text/rich-text';
 
 const Blog = ({ blogPost }: { blogPost: BlogPost }): ReactElement => {
   return (
@@ -37,6 +38,7 @@ const Blog = ({ blogPost }: { blogPost: BlogPost }): ReactElement => {
         />
       </div>
       <div className="content-wrapper">
+        <RichText content={blogPost.textcontent} />
         <Content content={blogPost.content} />
       </div>
       <style jsx>{`

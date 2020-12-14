@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/rich-text.json",
+  "title": "Rich Text",
+  "description": "Rich Text schema",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "richtext": {
+      "type": "array",
+      "ui:extension": {
+        "name": "rich-text",
+        "params": {
+          "language": "json",
+          "tools": {
+            "dc-content-link": {
+              "contentTypes": [
+                "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/text.json",
+                "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/image.json",
+                "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/video.json"
+              ],
+              "contentTypeSettings": {
+                "cards": {
+                  "*": "https://bigcontent.io/cms/cards/text/index.html?headline=/text&src=%2F%2F{{vse.domain}}%2Fcms%2Fcontent%2Fquery%3FfullBodyObject%3Dtrue%26query%3D%257B%2522sys.iri%2522%253A%2522http%253A%252F%252Fcontent.cms.amplience.com%252F{{content.sys.id}}%2522%257D%26scope%3Dtree%26store%3Dstaging"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "propertyOrder": ["richtext"]
+}

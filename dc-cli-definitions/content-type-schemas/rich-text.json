@@ -1,0 +1,5 @@
+{
+  "body": "../../schemas/rich-text.json",
+  "schemaId": "https://raw.githubusercontent.com/emilygodfrey/dc-static-blog-nextjs/eu-sfcc-presales/schemas/rich-text.json",
+  "validationLevel": "CONTENT_TYPE"
+}
